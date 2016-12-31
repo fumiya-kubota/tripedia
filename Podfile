@@ -6,7 +6,8 @@ target 'tripedia' do
   use_frameworks!
   # Pods for tripedia
 
-  pod 'RealmSwift'
+  pod 'RealmSwift', '2.1.2'
+  pod ‘FontAwesome.swift’
 
   target 'tripediaTests' do
     inherit! :search_paths

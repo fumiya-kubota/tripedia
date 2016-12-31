@@ -8,15 +8,17 @@
 
 import UIKit
 import WebKit
+import FontAwesome_swift
 
 
 class ViewController: UIViewController, WKNavigationDelegate {
     let webView = WKWebView.init()
 
     @IBOutlet weak var webViewBase: UIView!
-    @IBOutlet weak var backButton: UIBarButtonItem!
-    @IBOutlet weak var nextButton: UIBarButtonItem!
     @IBOutlet weak var actionButton: UIBarButtonItem!
+    
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var forwardButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +42,17 @@ class ViewController: UIViewController, WKNavigationDelegate {
             actionButton.isEnabled = false
         }
         self.backButton.isEnabled = webView.canGoBack
-        self.nextButton.isEnabled = webView.canGoForward
+        self.forwardButton.isEnabled = webView.canGoForward
     }
+    
     @IBAction func backButtonPushed(_ sender: Any) {
         webView.goBack()
     }
-
+    
     @IBAction func forwardButtonPushed(_ sender: Any) {
         webView.goForward()
     }
-    
+
     @IBAction func actionButtonPushed(_ sender: UIBarButtonItem) {
         if let url = webView.url {
             let vc = UIActivityViewController(activityItems: [url], applicationActivities: [])
