@@ -1,5 +1,6 @@
 PODS:
   - FontAwesome.swift (1.0.0)
+  - MTMigration (0.0.5)
   - Realm (2.1.2):
     - Realm/Headers (= 2.1.2)
   - Realm/Headers (2.1.2)
@@ -18,6 +19,7 @@ PODS:
 
 DEPENDENCIES:
   - FontAwesome.swift
+  - MTMigration
   - RealmSwift (= 2.1.2)
   - RxBlocking (~> 3.0)
   - RxCocoa (~> 3.0)
@@ -27,6 +29,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   FontAwesome.swift: 2d32a3d62195343c2004b7c9043294ed2948553a
+  MTMigration: 725315e6469c8fd7d13966887f59e65eb8aecb2e
   Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
   RealmSwift: 17d6ee30b6f9df86364408c2197492e33bfea567
   RxBlocking: 5de082d09d1ab45b49173f309f1a97d6b50f34c4
@@ -35,6 +38,6 @@ SPEC CHECKSUMS:
   RxTest: 9867e6f3c435af30fbdb44b6d8ec30b78c40b515
   RxWebKit: d237746fede36ebe8b94e724cabab5b00d8174e3
 
-PODFILE CHECKSUM: 9df71212f3f44f7384dd1683d20eedce9ebd367a
+PODFILE CHECKSUM: fb9d406b71ab1b57889fd1ebf8f6902efe460cda
 
 COCOAPODS: 1.1.1

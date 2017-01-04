@@ -7,10 +7,11 @@ target 'tripedia' do
   # Pods for tripedia
 
   pod 'RealmSwift', '2.1.2'
-  pod ‘FontAwesome.swift’
-  pod 'RxSwift',    '~> 3.0'
-  pod 'RxCocoa',    '~> 3.0'
+  pod 'FontAwesome.swift'
+  pod 'RxSwift', '~> 3.0'
+  pod 'RxCocoa', '~> 3.0'
   pod 'RxWebKit'
+  pod 'MTMigration'
   
   target 'tripediaTests' do
     inherit! :search_paths

@@ -11,4 +11,8 @@ import RealmSwift
 
 class URI: Object {
     dynamic var uri = ""
+    
+    override static func primaryKey() -> String? {
+        return "uri"
+    }
 }

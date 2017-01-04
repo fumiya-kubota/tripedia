@@ -9,6 +9,6 @@
 import Foundation
 import RealmSwift
 
-class Properties: Object {
-    let uris = List<URI>()
+class PresetProperty: Object {
+    dynamic var uri: URI?
 }

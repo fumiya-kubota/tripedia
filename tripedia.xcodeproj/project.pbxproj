@@ -20,8 +20,9 @@
 		3655E3491E1CE68700F3FEF4 /* TripediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655E3481E1CE68700F3FEF4 /* TripediaViewController.swift */; };
 		3665B54D1E1D020B00AB3035 /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B54C1E1D020B00AB3035 /* URI.swift */; };
 		3665B54F1E1D021900AB3035 /* sparql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B54E1E1D021900AB3035 /* sparql.swift */; };
-		3665B5521E1D022300AB3035 /* properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B5501E1D022300AB3035 /* properties.swift */; };
+		3665B5521E1D022300AB3035 /* PresetProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B5501E1D022300AB3035 /* PresetProperty.swift */; };
 		3665B5531E1D022300AB3035 /* resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B5511E1D022300AB3035 /* resource.swift */; };
+		3665B5551E1D07D500AB3035 /* properties.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3665B5541E1D07D500AB3035 /* properties.txt */; };
 		B6327281260FF6B02A42E1B7 /* Pods_tripedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681A78E809EE27A65B2F931C /* Pods_tripedia.framework */; };
 		BE19D65FA3570DDED8668A77 /* Pods_tripediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6669516B3F1666770CA21C24 /* Pods_tripediaUITests.framework */; };
 		FDB5161886E4583E7FEF8BD7 /* Pods_tripediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7527D1BD77F3E4AB95DE2E6 /* Pods_tripediaTests.framework */; };
@@ -66,8 +67,9 @@
 		3655E3481E1CE68700F3FEF4 /* TripediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripediaViewController.swift; sourceTree = "<group>"; };
 		3665B54C1E1D020B00AB3035 /* URI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URI.swift; path = tripedia/URI.swift; sourceTree = "<group>"; };
 		3665B54E1E1D021900AB3035 /* sparql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sparql.swift; path = tripedia/sparql.swift; sourceTree = "<group>"; };
-		3665B5501E1D022300AB3035 /* properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = properties.swift; path = tripedia/properties.swift; sourceTree = "<group>"; };
+		3665B5501E1D022300AB3035 /* PresetProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresetProperty.swift; path = tripedia/PresetProperty.swift; sourceTree = "<group>"; };
 		3665B5511E1D022300AB3035 /* resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resource.swift; path = tripedia/resource.swift; sourceTree = "<group>"; };
+		3665B5541E1D07D500AB3035 /* properties.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = properties.txt; sourceTree = "<group>"; };
 		6669516B3F1666770CA21C24 /* Pods_tripediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tripediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		681A78E809EE27A65B2F931C /* Pods_tripedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tripedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99178ABA72F251DBC9F0449C /* Pods-tripedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-tripedia/Pods-tripedia.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		1BC44F0E1E0AE090005873F5 /* tripedia */ = {
 			isa = PBXGroup;
 			children = (
+				3665B5561E1D0C6C00AB3035 /* assets */,
 				3655E33E1E1CB94100F3FEF4 /* models */,
 				3655E33F1E1CB94800F3FEF4 /* extensions */,
 				1BC44F0F1E0AE090005873F5 /* AppDelegate.swift */,
@@ -168,7 +171,7 @@
 			children = (
 				3665B54C1E1D020B00AB3035 /* URI.swift */,
 				3665B54E1E1D021900AB3035 /* sparql.swift */,
-				3665B5501E1D022300AB3035 /* properties.swift */,
+				3665B5501E1D022300AB3035 /* PresetProperty.swift */,
 				3665B5511E1D022300AB3035 /* resource.swift */,
 			);
 			name = models;
@@ -182,6 +185,14 @@
 			);
 			name = extensions;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		3665B5561E1D0C6C00AB3035 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				3665B5541E1D07D500AB3035 /* properties.txt */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 		4A1BCC3464DF1708B202D371 /* Frameworks */ = {
@@ -327,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC44F1A1E0AE090005873F5 /* LaunchScreen.storyboard in Resources */,
+				3665B5551E1D07D500AB3035 /* properties.txt in Resources */,
 				1BC44F171E0AE090005873F5 /* Assets.xcassets in Resources */,
 				1BC44F151E0AE090005873F5 /* Main.storyboard in Resources */,
 			);
@@ -491,7 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3665B5521E1D022300AB3035 /* properties.swift in Sources */,
+				3665B5521E1D022300AB3035 /* PresetProperty.swift in Sources */,
 				3665B54D1E1D020B00AB3035 /* URI.swift in Sources */,
 				3655E3491E1CE68700F3FEF4 /* TripediaViewController.swift in Sources */,
 				3665B54F1E1D021900AB3035 /* sparql.swift in Sources */,

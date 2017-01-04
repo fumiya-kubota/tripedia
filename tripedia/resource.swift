@@ -14,7 +14,7 @@ class Resource: Object {
         case Resource = "Resource"
         case Property = "Property"
     }
-    dynamic var uri = URI()
+    dynamic var uri: URI?
     dynamic var type: String = Type.Resource.rawValue
 }
 

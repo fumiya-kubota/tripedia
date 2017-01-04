@@ -8,6 +8,9 @@
 
 import UIKit
 import FontAwesome_swift
+import MTMigration
+import RealmSwift
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +22,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let realm = try! Realm()
+        MTMigration.migrate(toVersion: "1.0.0") {
+            guard let path = Bundle.main.path(forResource: "properties", ofType: "txt") else {
+                return
+            }
+            guard let content = try? String.init(contentsOf: .init(fileURLWithPath: path)) else {
+                return
+            }
+            try! realm.write {
+                for row in content.components(separatedBy: "\n") {
+                    let uri = URI(value: ["uri": row])
+                    realm.add(uri)
+                    let property = PresetProperty(value:["uri": uri])
+                    realm.add(property)
+                }
+            }
+        }
         return true
     }
 

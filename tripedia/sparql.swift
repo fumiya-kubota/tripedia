@@ -19,9 +19,9 @@ class SparqlResource: Object {
 }
 
 class SparqlTriple: Object {
-    dynamic var first = SparqlVariable()
-    dynamic var second = SparqlVariable()
-    dynamic var third = SparqlVariable()
+    dynamic var first: SparqlVariable?
+    dynamic var second: SparqlVariable?
+    dynamic var third: SparqlVariable?
 }
 
 class Sparql: Object {
