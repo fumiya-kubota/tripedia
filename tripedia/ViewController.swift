@@ -9,6 +9,9 @@
 import UIKit
 import WebKit
 import FontAwesome_swift
+import RxSwift
+import RxCocoa
+import RxWebKit
 
 
 class ViewController: UIViewController, WKNavigationDelegate {
@@ -19,18 +22,36 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
+    @IBOutlet weak var starButton: UIButton!
+
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         webView.navigationDelegate = self
         webView.allowsBackForwardNavigationGestures = true
+        
+        webView.rx.url.subscribe(onNext: {[weak self] in
+            guard let url = $0 else {
+                self?.title = ""
+                return
+            }
+            guard let pageName = url.pageName else {
+                self?.title = url.absoluteString
+                return
+            }
+            self?.title = pageName
+        }).addDisposableTo(disposeBag)
+        
         webView.load(URLRequest.init(url: URL.init(string: "https://ja.m.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8")!))
     }
+
     override func loadView() {
         super.loadView()
         webViewBase.addSubview(webView)
     }
+
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         updateToolBarButtons()
     }
@@ -67,15 +88,26 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "dbpedia" {
-            let dest = segue.destination as! DBPediaViewController
+            let dest = (segue.destination as! UINavigationController).topViewController as! DBPediaViewController
             guard let url = webView.url else {
                 return
             }
             dest.dbpediaURL = url.dbpediaURL
         }
     }
+
     @IBAction func returnAction(for segue: UIStoryboardSegue) {
-    
+        if (segue.identifier == "wikipedia") {
+            let vc = segue.source as! DBPediaViewController
+            guard let url = vc.dbpediaURL else {
+                return
+            }
+            guard let wikipediaURL = url.wikipediaURL else {
+                return
+            }
+            if (webView.url != wikipediaURL) {
+                webView.load(.init(url: wikipediaURL))
+            }
+        }
     }
 }
-

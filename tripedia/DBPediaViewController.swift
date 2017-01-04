@@ -20,12 +20,12 @@ class DBPediaViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
     @IBOutlet weak var actionButton: UIBarButtonItem!
+    @IBOutlet weak var starButton: UIButton!
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.allowsBackForwardNavigationGestures = true
-
         let isURLStream = webView.rx.url.map { url -> Bool in
             return (url != nil) ? true : false
         }
@@ -55,11 +55,26 @@ class DBPediaViewController: UIViewController {
             }
         }).addDisposableTo(disposeBag)
         
+        webView.rx.url.subscribe(onNext: {[weak self] in
+            guard let url = $0 else {
+                self?.title = ""
+                return
+            }
+            guard let pageName = url.pageName else {
+                self?.title = url.absoluteString
+                return
+            }
+            self?.title = pageName
+        }).addDisposableTo(disposeBag)
+        
         if let url = self.dbpediaURL {
             webView.load(URLRequest.init(url: url))
         }
+        webView.rx.url.subscribe(onNext: {[weak self] in
+            self?.dbpediaURL = $0
+        }).addDisposableTo(disposeBag)
     }
-    
+        
     override func loadView() {
         super.loadView()
         webViewBase.addSubview(webView)

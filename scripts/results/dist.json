@@ -1,0 +1,2462 @@
+[
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#version"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#loadAs"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#item"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#isSpecialPredicate"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#isGcResistantType"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#dialect"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#dialect-exceptions"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfLongTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfSqlvalTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfBoolTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsrefOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsuriOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsblankOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIslitOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmf01uriOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmf01blankOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfLongOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfSqlvalOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfDatatypeOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfLanguageOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfBoolOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIidOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfUriOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfStrsqlvalOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfShortOfTypedsqlvalTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfShortOfSqlvalTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfShortOfLongTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfShortOfUriTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsBijection"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfMapsOnlyNullToNull"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsStable"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLong"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLongWhenRef"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfCmpFuncName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfTypeminTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfTypemaxTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfColumnCount"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfOkForAnySqlvalue"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrRestrictions"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfUriIdOffset"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfSuperFormats"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#inheritFrom"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#noInherit"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfSparqlEbvTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfSparqlEbvOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfTypedsqlvalTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfSqlvalTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfLongTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfUriTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLongWhenEqToSql"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfWrapDistinct"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfSubFormatForRefs"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfIsnumericOfShortTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfShortOfNiceSqlvalTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfDtpOfNiceSqlval"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfHasCheapSqlval"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfDatatypeTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfLanguageTmpl"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrDatatype"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfCustomString1"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrLanguage"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmGraphMap"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmSubjectMap"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmPredicateMap"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmObjectMap"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmTableName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmMatchingFlags"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvTableName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvATables"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvColumns"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvFormat"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvColumnsFormKey"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvcAlias"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvcColumnName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvFText"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvGeo"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvaAlias"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvaTableName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvftColumnName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvftXmlIndex"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvftAlias"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvftConds"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qmvftTableName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qsUserMaps"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qsDefaultMap"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/virtrdf#qsMatchingFlags"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/created"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/modified"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.openlinksw.com/schemas/DAV#ownerUser"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/extent"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2000/01/rdf-schema#domain"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2000/01/rdf-schema#range"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/ns/sparql-service-description#endpoint"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/ns/sparql-service-description#feature"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/ns/sparql-service-description#resultFormat"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/ns/sparql-service-description#supportedLanguage"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/ns/sparql-service-description#url"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/distance(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/サスペンション(前)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/サスペンション(後)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/タイヤサイズ(前)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/タイヤサイズ(後)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ネブティ名（二女神名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ブレーキ(前)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ブレーキ(後)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/全幅（内寸法）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/全長（内寸法）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/全高（内寸法）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目3（内容）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目3（項目名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目（内容）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目（項目名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/e（東経)及びw（西経）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/spouse(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/サスペンション（前）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/サスペンション（後）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/タイヤサイズ（前）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/タイヤサイズ（後）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/監督（演出）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/subdivisionName1++_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/subdivisionName1+_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/起源(市町村区)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/起源(県)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/（分類なし）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/監督（男子硬式）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/総監督（女子硬式）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/developer(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目1（説明）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目2（説明）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/親族(政治家)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/*13%3Cnowiki%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/*19%3Cnowiki%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/*7%3Cnowiki%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/衛星数（惑星の場合）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/elements/1.1/description"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/gender"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/givenName"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/name"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/nick"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/surname"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/primaryTopic"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/elements/1.1/language"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/n(北緯)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/subdivisionName+_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/w(西経)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン名（プロペラ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン数（プロペラ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン種類（プロペラ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/全高(非人型)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/教え主（代表役員）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/教祖（初代教え主）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/発電所名（認可出力）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/知識に振り回され叙述が平坦です。時系列で整理するか、形態で整理するかの改善が必要です。_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/consecration(catholic)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/reportedDeath(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/occupation(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン名(ジェット)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン数(ジェット)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン種類(ジェット)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/人口密度(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/掲載誌（又は連載）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/負革（スリング）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ナット(材)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/設置者~_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/2%3Csup%3E20%3C/sup%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/従業員数（正社員）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/設立（実質上）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/最高速度（路上）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/誌名（サイト名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/外部リンク（日本）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/rating(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/thrust(vac)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/脚本（日本語版台本）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/nickname(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/reportedSurvivor(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/suspect(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/カメラ（キャメラ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/otherName(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ruCaps(points)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/協力（監修）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://creativecommons.org/ns#license"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/ns/prov#wasDerivedFrom"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/creator"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/description"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/issued"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/publisher"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/source"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/title"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/homepage"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/subdivisionName++_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/世界ランク（最高）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/主惑星（衛星の場合）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/人口%25_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/面積%25_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/別名義（旧姓）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/所在地（本部）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/視聴料金(月額)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/主恒星（惑星の場合）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/人口密度(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/seats%25_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/votes%25_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/terms/subject"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/wikiPageUsesTemplate"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/covalentBonding%25_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/date'''_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/e(東経)及びw(西経)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/km²_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/n(北緯)及びs(南緯)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン名（ジェット）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン数（ジェット）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/エンジン種類（ジェット）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ジェットOrプロペラ%3F_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ネック(材)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/フィンガーボード(材)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/フルネーム（英語名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/プレーオフ（20042006）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/プレーオフ（前後期制）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ボディ(材)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/人口密度(平方キロ当たり)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/人口密度(平方マイル当たり)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/代表出場（得点）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/固定翼Or回転翼%3F_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/定義（国際マイル）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/市街地人口密度(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/市街地人口密度(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/市街地面積(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/市街地面積(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/標高(フィート)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/標高(メートル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/死去年(日)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/水面面積(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/水面面積(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/減速度（常用最大）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/減速度（通常）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/減速度（非常）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/生誕年(日)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/総面積(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/総面積(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/親族（政治家）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/選手名（日本語）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/選手名（英語）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/都市圏人口密度(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/都市圏人口密度(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/都市圏面積(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/都市圏面積(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/陸上面積(平方キロ)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/陸上面積(平方マイル)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/事業内容（取扱品種）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目1（最高速度）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/audioSample%3F_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/succeeding++_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/succeeding+_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/producer(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/タイヤ(前)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/タイヤ(後)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/代表キャップ（得点）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/代表者(理事長）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/founder(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/bodyStyle(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/法人化（市）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/法人化（町）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/貯貸率（ちょたくりつ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2004/02/skos/core#broader"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2004/02/skos/core#related"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/公転周期(d)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/配偶者BrendaCooper(19831987)%3Cbr/%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/population(2001Census)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/陸上距離（現在の供用区間）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/出場(得点)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/建学の精神(略)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/映像（ストリーミング）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/映像（テレビ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/類(区)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/代表出場1（得点）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/lastElection(boundaryChanges)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/旧活動拠点(マンション)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/現活動拠点(一軒家)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/director(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/愛称？_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/所在地(千代の湯)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/所在地(地蔵の湯)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/浴槽面積(千代の湯)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/浴槽面積(地蔵の湯)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ロゴ(現在)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ロゴ(過去)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/人口密度（平方キロ当たり）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/《_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/populationDensityK,_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/isbn%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/alternativeTitle(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/author(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/nationalcaps(goals)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://purl.org/dc/elements/1.1/rights"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/depiction"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/thumbnail"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/〒_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目3(内容)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目3(項目名)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/賃貸等不動産評価益（含み益）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/入浴料（公衆浴場）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/掲載誌（または連載）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/標高（メートル）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/総面積（平方キロ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/軌道長半径(au)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/language(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ディレクター（選曲者）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/作者（年代）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/公式サイト（ブログ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/国内関係会社（矢崎グループ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/'''name'''_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目4（内容）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目4（項目名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目5（内容）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目5（項目名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/外部リンク(全日制)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/登場（最初）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/登場（最後）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/日本ランク（最高）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/preceding+_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/校長(2014年9月現在)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/制作局Anime%5E%5E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/延べ卒業生(平成24年4月1日)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/%3Csmall%3E公式サイト%3C/small%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/voiceType(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目1(生産台数)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目1(項目名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目1（生産台数）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ふりがな(本名)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/関連団体（nhkグループネット）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/champion(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/composer(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/organisation(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/死去年（日）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/生誕年（日）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/(階級なし)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/edテーマ（3話目）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/刊行期間（先行版）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/刊行期間（全国版）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/最新リリース(開発版除く)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/thrust(sl)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/テレビ東京「うぇぶたまww」_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/img"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/logo"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://xmlns.com/foaf/0.1/page"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://www.georss.org/georss/point"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/e(東経)およびw(西経)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/e（東経）及びw（西経）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/minorForwardProduct(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/minorForwardSubstrate(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/minorReverseProduct(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/minorReverseSubstrate(s)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/n(北緯)およびs(南緯)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/n（北緯）及びs（南緯）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/reactionDirection(forward/reversible/reverse)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/引張力（全界磁）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/減速度（常用）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/発見日（または、発見年）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/車両定員（カッコ内は補助席未使用時）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/ordination(catholic)_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/populationBlank183.3%25_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/スカパー!_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/出場（得点）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/巻数（又は冊数）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目1（内容）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目1（項目名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目2（内容）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/自由項目2（項目名）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/1―_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/チーム名（通称）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/aprDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/augDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/decDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/febDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/janDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/julDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/junDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/marDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/mayDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/novDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/octDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/sepDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/yearDaysWithPrecipitation%23_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/公式サイト（twitter）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/原作'_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/グループ（山梨中央交通グループ）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/発電所名%3Cbr/%3E（認可出力）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/%3C/nowiki%3E''df''%3Cnowiki%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/con(''f'')%3Cnowiki%3E_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/主要株主（再設立前）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/代表者（再設立前）_"
+    }
+  },
+  {
+    "p": {
+      "type": "uri",
+      "value": "http://ja.dbpedia.org/property/資本金（再設立前）_"
+    }
+  }
+]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gbE-51-IrI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,6 +14,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="aSb-Xy-rZv">
+            <objects>
+                <navigationController id="SpH-my-G9N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mmq-H9-3Z7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aGR-RO-hN7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOF-Rj-Sbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="36"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -27,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNV-4f-rPO" userLabel="web base">
-                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VaI-CE-xnt">
@@ -73,7 +89,7 @@
                                             <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="25"/>
                                             <state key="normal" title="DB"/>
                                             <connections>
-                                                <segue destination="dce-1i-skK" kind="presentation" identifier="dbpedia" modalTransitionStyle="flipHorizontal" id="9li-85-Ey1"/>
+                                                <segue destination="asN-DR-cUE" kind="presentation" identifier="dbpedia" modalTransitionStyle="flipHorizontal" id="8YQ-Lc-z5S"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -88,23 +104,32 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DNV-4f-rPO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8gS-wh-wIH"/>
                             <constraint firstItem="VaI-CE-xnt" firstAttribute="top" secondItem="DNV-4f-rPO" secondAttribute="bottom" id="GZV-Dg-mZ0"/>
                             <constraint firstItem="DNV-4f-rPO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X9O-4V-JO8"/>
                             <constraint firstAttribute="trailing" secondItem="VaI-CE-xnt" secondAttribute="trailing" id="Xw6-gx-CvY"/>
                             <constraint firstAttribute="trailing" secondItem="DNV-4f-rPO" secondAttribute="trailing" id="ajn-BJ-Xh2"/>
                             <constraint firstAttribute="bottom" secondItem="VaI-CE-xnt" secondAttribute="bottom" id="cYE-BG-f72"/>
                             <constraint firstItem="VaI-CE-xnt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ieg-fw-uP2"/>
+                            <constraint firstItem="DNV-4f-rPO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yJ3-2f-jsb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="BrY-jf-uPr">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="gfv-LN-p0s">
+                            <connections>
+                                <segue destination="ljJ-yx-dUb" kind="unwind" unwindAction="returnToRootActionFor:" id="SPQ-B4-21K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="actionButton" destination="9Na-RH-t9F" id="CEO-sE-iWG"/>
                         <outlet property="backButton" destination="I0E-Sp-mjJ" id="7CR-yD-IIl"/>
                         <outlet property="forwardButton" destination="0g7-tZ-aAe" id="3zb-ff-i0v"/>
+                        <outlet property="starButton" destination="ZAE-em-rbS" id="iYk-C2-n4R"/>
                         <outlet property="webViewBase" destination="DNV-4f-rPO" id="Qid-BX-LfV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="ljJ-yx-dUb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="20" y="37"/>
         </scene>
@@ -121,7 +146,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCc-Ig-fph" userLabel="web base">
-                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNV-xY-WMp">
@@ -161,9 +186,12 @@
                                             <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="25"/>
                                             <state key="normal" title=""/>
                                             <connections>
-                                                <segue destination="Uyu-EO-cVQ" kind="unwind" unwindAction="returnActionFor:" id="Ido-GV-dRM"/>
+                                                <segue destination="Uyu-EO-cVQ" kind="unwind" identifier="wikipedia" unwindAction="returnActionFor:" id="Ido-GV-dRM"/>
                                             </connections>
                                         </button>
+                                        <connections>
+                                            <segue destination="Uyu-EO-cVQ" kind="unwind" unwindAction="returnActionFor:" id="yLz-Ra-u9E"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="hIn-r3-pxU"/>
                                     <barButtonItem systemItem="action" id="d3m-pI-4bW"/>
@@ -174,24 +202,106 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="jCc-Ig-fph" secondAttribute="trailing" id="BrB-Rn-wU9"/>
                             <constraint firstItem="jCc-Ig-fph" firstAttribute="leading" secondItem="OyA-zD-W53" secondAttribute="leading" id="LnK-hg-UQp"/>
-                            <constraint firstItem="jCc-Ig-fph" firstAttribute="top" secondItem="oZE-b4-Vqb" secondAttribute="bottom" id="Oc0-2J-Ium"/>
                             <constraint firstAttribute="trailing" secondItem="TNV-xY-WMp" secondAttribute="trailing" id="Ohg-p5-8lR"/>
+                            <constraint firstItem="jCc-Ig-fph" firstAttribute="top" secondItem="OyA-zD-W53" secondAttribute="top" id="SWs-Ed-soM"/>
                             <constraint firstItem="TNV-xY-WMp" firstAttribute="leading" secondItem="OyA-zD-W53" secondAttribute="leading" id="UnY-uE-mEh"/>
                             <constraint firstItem="F5a-54-fdW" firstAttribute="top" secondItem="TNV-xY-WMp" secondAttribute="bottom" id="hUd-li-UjZ"/>
                             <constraint firstItem="TNV-xY-WMp" firstAttribute="top" secondItem="jCc-Ig-fph" secondAttribute="bottom" id="zSQ-g8-EUW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="t6c-XR-Lbd">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="oHh-8p-igj">
+                            <connections>
+                                <segue destination="Uyu-EO-cVQ" kind="unwind" unwindAction="returnToRootActionFor:" id="glZ-pt-iPe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="actionButton" destination="d3m-pI-4bW" id="Fxb-Oj-HHO"/>
                         <outlet property="backButton" destination="qYQ-1n-xKE" id="qEN-Us-eRz"/>
                         <outlet property="forwardButton" destination="9hV-H1-EAf" id="Ukt-L4-r9I"/>
+                        <outlet property="starButton" destination="jVP-Ch-azm" id="ABK-Bm-LMF"/>
                         <outlet property="webViewBase" destination="jCc-Ig-fph" id="G46-RU-hTc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFn-Di-kYK" sceneMemberID="firstResponder"/>
                 <exit id="Uyu-EO-cVQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1350" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mud-vk-axf">
+            <objects>
+                <navigationController id="asN-DR-cUE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sVc-Hf-mP3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dce-1i-skK" kind="relationship" relationship="rootViewController" id="3vv-m2-4Lu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSP-Zz-4i2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="36"/>
+        </scene>
+        <!--Tripedia View Controller-->
+        <scene sceneID="dNX-4z-wrQ">
+            <objects>
+                <viewController id="jC6-8E-o2Z" customClass="TripediaViewController" customModule="tripedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5IK-NA-LO8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yu3-o6-bte"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4gW-SH-Cja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kn-gr-Uwy">
+                                <rect key="frame" x="166" y="200" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="bfn-uN-SAz">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="F2Y-6B-iQA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="syV-CP-0Jr">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="25"/>
+                                <state key="normal" title=""/>
+                                <connections>
+                                    <segue destination="SpH-my-G9N" kind="presentation" id="GML-aJ-FsX"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xo-wJ-lSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1366" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HLT-kI-lws">
+            <objects>
+                <navigationController id="gbE-51-IrI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="OT6-kB-Ce6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jC6-8E-o2Z" kind="relationship" relationship="rootViewController" id="A0t-6e-aSH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5t-S1-Pjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2047" y="36"/>
         </scene>
     </scenes>
 </document>

@@ -36,6 +36,6 @@ extension URL {
         guard let pageName = self.pageName else {
             return nil
         }
-        return URL.init(string: "http://ja.dbpedia.org/page/\(pageName.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics)!)")
+        return URL.init(string: "https://ja.wikipedia.org/wiki/\(pageName.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics)!)")
     }
 }

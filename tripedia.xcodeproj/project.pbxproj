@@ -17,6 +17,11 @@
 		1BC44F1A1E0AE090005873F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC44F181E0AE090005873F5 /* LaunchScreen.storyboard */; };
 		1BC44F251E0AE090005873F5 /* tripediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC44F241E0AE090005873F5 /* tripediaTests.swift */; };
 		1BC44F301E0AE090005873F5 /* tripediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC44F2F1E0AE090005873F5 /* tripediaUITests.swift */; };
+		3655E3491E1CE68700F3FEF4 /* TripediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655E3481E1CE68700F3FEF4 /* TripediaViewController.swift */; };
+		3665B54D1E1D020B00AB3035 /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B54C1E1D020B00AB3035 /* URI.swift */; };
+		3665B54F1E1D021900AB3035 /* sparql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B54E1E1D021900AB3035 /* sparql.swift */; };
+		3665B5521E1D022300AB3035 /* properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B5501E1D022300AB3035 /* properties.swift */; };
+		3665B5531E1D022300AB3035 /* resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665B5511E1D022300AB3035 /* resource.swift */; };
 		B6327281260FF6B02A42E1B7 /* Pods_tripedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681A78E809EE27A65B2F931C /* Pods_tripedia.framework */; };
 		BE19D65FA3570DDED8668A77 /* Pods_tripediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6669516B3F1666770CA21C24 /* Pods_tripediaUITests.framework */; };
 		FDB5161886E4583E7FEF8BD7 /* Pods_tripediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7527D1BD77F3E4AB95DE2E6 /* Pods_tripediaTests.framework */; };
@@ -42,7 +47,7 @@
 /* Begin PBXFileReference section */
 		03305713969B86877255A1F7 /* Pods-tripediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tripediaTests/Pods-tripediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C8DC506F1BA2861C38A3544 /* Pods-tripediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripediaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tripediaUITests/Pods-tripediaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1B84AE321E10DDF500852F3B /* URL+dbpedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+dbpedia.swift"; sourceTree = "<group>"; };
+		1B84AE321E10DDF500852F3B /* URL+dbpedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URL+dbpedia.swift"; path = "tripedia/URL+dbpedia.swift"; sourceTree = "<group>"; };
 		1B84AE361E10DE7D00852F3B /* URLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		1B84AE391E110ED300852F3B /* DBPediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBPediaViewController.swift; sourceTree = "<group>"; };
 		1BC44F0C1E0AE090005873F5 /* tripedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +63,11 @@
 		1BC44F2B1E0AE090005873F5 /* tripediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tripediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC44F2F1E0AE090005873F5 /* tripediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tripediaUITests.swift; sourceTree = "<group>"; };
 		1BC44F311E0AE090005873F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3655E3481E1CE68700F3FEF4 /* TripediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripediaViewController.swift; sourceTree = "<group>"; };
+		3665B54C1E1D020B00AB3035 /* URI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URI.swift; path = tripedia/URI.swift; sourceTree = "<group>"; };
+		3665B54E1E1D021900AB3035 /* sparql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sparql.swift; path = tripedia/sparql.swift; sourceTree = "<group>"; };
+		3665B5501E1D022300AB3035 /* properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = properties.swift; path = tripedia/properties.swift; sourceTree = "<group>"; };
+		3665B5511E1D022300AB3035 /* resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resource.swift; path = tripedia/resource.swift; sourceTree = "<group>"; };
 		6669516B3F1666770CA21C24 /* Pods_tripediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tripediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		681A78E809EE27A65B2F931C /* Pods_tripedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tripedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99178ABA72F251DBC9F0449C /* Pods-tripedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tripedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-tripedia/Pods-tripedia.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,14 +130,16 @@
 		1BC44F0E1E0AE090005873F5 /* tripedia */ = {
 			isa = PBXGroup;
 			children = (
+				3655E33E1E1CB94100F3FEF4 /* models */,
+				3655E33F1E1CB94800F3FEF4 /* extensions */,
 				1BC44F0F1E0AE090005873F5 /* AppDelegate.swift */,
+				3655E3481E1CE68700F3FEF4 /* TripediaViewController.swift */,
 				1BC44F111E0AE090005873F5 /* ViewController.swift */,
 				1B84AE391E110ED300852F3B /* DBPediaViewController.swift */,
 				1BC44F131E0AE090005873F5 /* Main.storyboard */,
 				1BC44F161E0AE090005873F5 /* Assets.xcassets */,
 				1BC44F181E0AE090005873F5 /* LaunchScreen.storyboard */,
 				1BC44F1B1E0AE090005873F5 /* Info.plist */,
-				1B84AE321E10DDF500852F3B /* URL+dbpedia.swift */,
 			);
 			path = tripedia;
 			sourceTree = "<group>";
@@ -149,6 +161,27 @@
 				1BC44F311E0AE090005873F5 /* Info.plist */,
 			);
 			path = tripediaUITests;
+			sourceTree = "<group>";
+		};
+		3655E33E1E1CB94100F3FEF4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3665B54C1E1D020B00AB3035 /* URI.swift */,
+				3665B54E1E1D021900AB3035 /* sparql.swift */,
+				3665B5501E1D022300AB3035 /* properties.swift */,
+				3665B5511E1D022300AB3035 /* resource.swift */,
+			);
+			name = models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3655E33F1E1CB94800F3FEF4 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B84AE321E10DDF500852F3B /* URL+dbpedia.swift */,
+			);
+			name = extensions;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4A1BCC3464DF1708B202D371 /* Frameworks */ = {
@@ -458,10 +491,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3665B5521E1D022300AB3035 /* properties.swift in Sources */,
+				3665B54D1E1D020B00AB3035 /* URI.swift in Sources */,
+				3655E3491E1CE68700F3FEF4 /* TripediaViewController.swift in Sources */,
+				3665B54F1E1D021900AB3035 /* sparql.swift in Sources */,
 				1BC44F121E0AE090005873F5 /* ViewController.swift in Sources */,
 				1B84AE331E10DDF500852F3B /* URL+dbpedia.swift in Sources */,
 				1B84AE3A1E110ED300852F3B /* DBPediaViewController.swift in Sources */,
 				1BC44F101E0AE090005873F5 /* AppDelegate.swift in Sources */,
+				3665B5531E1D022300AB3035 /* resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
