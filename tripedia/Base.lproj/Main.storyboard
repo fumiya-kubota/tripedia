@@ -18,7 +18,7 @@
         <scene sceneID="aSb-Xy-rZv">
             <objects>
                 <navigationController id="SpH-my-G9N" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mmq-H9-3Z7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mmq-H9-3Z7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -233,7 +233,7 @@
         <scene sceneID="Mud-vk-axf">
             <objects>
                 <navigationController id="asN-DR-cUE" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sVc-Hf-mP3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVc-Hf-mP3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -287,11 +287,43 @@
             </objects>
             <point key="canvasLocation" x="-1366" y="36"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9Vd-3e-ioh">
+            <objects>
+                <tabBarController id="RPZ-37-pNO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="H2n-2Z-TDB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBO-iP-S74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2849" y="611"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cPF-kT-eIx">
+            <objects>
+                <viewController id="jj0-42-3j7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9hc-dE-eFv"/>
+                        <viewControllerLayoutGuide type="bottom" id="O1X-Vo-wio"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="brC-Tv-4fs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fd3-RL-sRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1976" y="613"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HLT-kI-lws">
             <objects>
                 <navigationController id="gbE-51-IrI" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="OT6-kB-Ce6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OT6-kB-Ce6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

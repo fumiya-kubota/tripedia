@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let realm = try! Realm()
+        // Version 1.0.0 DBPedia上にないプロパティをRealmに放り込む。
         MTMigration.migrate(toVersion: "1.0.0") {
             guard let path = Bundle.main.path(forResource: "properties", ofType: "txt") else {
                 return

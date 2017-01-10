@@ -10,14 +10,10 @@ import Foundation
 import RealmSwift
 
 class Resource: Object {
-    enum `Type` : String {
-        case Resource = "Resource"
-        case Property = "Property"
+    enum `Type` : Int {
+        case Resource
+        case Property
     }
     dynamic var uri: URI?
-    dynamic var type: String = Type.Resource.rawValue
-}
-
-class StockResources: Object {
-    let resources = List<Resource>()
+    dynamic var type = Type.Resource.rawValue
 }
